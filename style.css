@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(182, 182, 182);
+    position: relative;
+}
+.nav{
+    height: 90px;
+    padding: 0 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.lnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.lnav img{
+    mix-blend-mode: darken;
+    height: 28px;
+    width: 4vw;
+    margin-right: 170px;
+}
+.lnav h4{
+    margin-right: 6vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.lnav h4:hover{
+    border-bottom: 4px solid black;
+    line-height: 25px;
+}
+.rnav i{
+    margin-right: 4vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+
+}
+.content{
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+}
+.left{
+    width: 35%;
+    height: 100%;
+    padding: 90px 100px;   
+}
+.left h5{
+    font-size: 1vw;
+    font-weight: 600;
+    opacity: .6;
+    margin-bottom: 30px;
+
+}
+.left h1{
+    font-size: 3vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.left p{
+    font-size: 1vw;
+    margin-bottom: 40px;
+}
+.left button{
+    size: 30px;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+}
+#right{
+    width: 65%;
+    height: 100%;
+    padding: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+display: none;
+}
+
+.elem{
+    height: 400px;
+    width: 290px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.3);
+    display: inline-block;
+    margin-right: 15px;
+
+}
+.elem img{
+    height: 80%;
+    width: 100%;
+    top: 8%;
+    position: absolute;
+    object-fit: cover;
+}
+.elem h4{
+    position: absolute;
+    bottom: 0 ;
+    right: 0;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: gainsboro;
+    padding: 15px 30px;
+    border-radius: 6px;
+}
+.elem h5{
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    padding:10px 20px ;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+/*Responsive navbar*/
+
+@media (max-width:600px) {
+    .nav{
+        background-color: bisque;
+        height: 60px;
+        width: 100%;
+    }
+    .lnav img{
+        height: 3vh;
+        width: 10vw;
+    }
+    .lnav h4{
+        display: none;
+    }
+    .rnav i{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
